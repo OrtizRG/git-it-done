@@ -52,7 +52,7 @@ var getUserRepos = function(user) {
         console.log(response);
         response.json().then(function(data) {
           console.log(data);
-          displayRepos(data, user);
+          displayRepos(data, users);
         });
       } else {
         alert('Error: GitHub User Not Found');
