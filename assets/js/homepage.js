@@ -1,15 +1,10 @@
-<<<<<<< HEAD
-var userFormEl = document.querySelector("#user-form");
-var languageButtonsEl = document.querySelector("#language-buttons");
-=======
 
+var languageButtonsEl = document.querySelector("#language-buttons");
 var userFormEl = document.querySelector("#user-form");
->>>>>>> develop
 var nameInputEl = document.querySelector("#username");
 var repoContainerEl = document.querySelector("#repos-container");
 var repoSearchTerm = document.querySelector("#repo-search-term");
 
-<<<<<<< HEAD
 
 
 var formSubmitHandler = function(event) {
@@ -17,26 +12,20 @@ var formSubmitHandler = function(event) {
   event.preventDefault();
 
   // get value from input element
-=======
 var formSubmitHandler = function(event) {
   event.preventDefault();
   //get value from input element
->>>>>>> develop
   var username = nameInputEl.value.trim();
 
   if (username) {
     getUserRepos(username);
-<<<<<<< HEAD
 
     // clear old content
     repoContainerEl.textContent = "";
-=======
->>>>>>> develop
     nameInputEl.value = "";
   } else {
     alert("Please enter a GitHub username");
   }
-<<<<<<< HEAD
 };
 
 var buttonClickHandler = function(event) {
@@ -141,7 +130,6 @@ var displayRepos = function(repos, searchTerm) {
 userFormEl.addEventListener("submit", formSubmitHandler);
 languageButtonsEl.addEventListener("click", buttonClickHandler);
 
-=======
   console.log(event);
 };
 
@@ -216,4 +204,3 @@ var displayRepos = function(repos, searchTerm) {
     repoContainerEl.appendChild(repoEl);
   }
 };
->>>>>>> develop
